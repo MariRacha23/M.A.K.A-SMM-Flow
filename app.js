@@ -18,3 +18,20 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.reveal');
 hiddenElements.forEach((el) => observer.observe(el));
+
+const burger = document.getElementById('burger-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+    navMenu.classList.toggle('nav-active');
+    
+    burger.classList.toggle('toggle');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('nav-active');
+        burger.classList.remove('toggle');
+    });
+});

@@ -1,97 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.A.K.A SMM Flow | სოციალური მედიის სააგენტო</title>
+    <title>M.A.K.A SMM Flow | სოციალური მედიის სააგენტო & Web Dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
+
 <body>
     <header>
-      <div class="logo">
-        <a href="#home">
-            <img src="./img/2.png" alt="M.A.K.A SMM Flow Logo">
-            <span>M.A.K.A SMM Flow</span>
-        </a>
-    </div>
-<div class="burger-menu" id="burger-toggle">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
+        <div class="logo">
+            <a href="#home">
+                <img src="./img/2.png" alt="M.A.K.A SMM Flow Logo">
+                <span>M.A.K.A SMM Flow</span>
+            </a>
+        </div>
 
-    <nav>
-        <ul class="nav-links" id="nav-menu">
-            <li><a href="#home">მთავარი</a></li>
-            <li><a href="#services">სერვისები</a></li>
-            <li><a href="#about">ჩვენ შესახებ</a></li>
-            <li><a href="#contact">კონტაქტი</a></li>
-        </ul>
-    </nav>
+        <div class="burger-menu" id="burger-toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <nav class="nav-container " id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav_home">მთავარი</a></li>
+                <li><a href="#services" data-i18n="nav_services">სერვისები</a></li>
+                <li><a href="#about" data-i18n="nav_about">ჩვენ შესახებ</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">კონტაქტი</a></li>
+            </ul>
+
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="ka" onclick="changeLanguage('ka')">
+                    <span class="fi fi-ge"></span> KA
+                </button>
+                <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">
+                    <span class="fi fi-us"></span> EN
+                </button>
+            </div>
+        </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>გაზარდე შენი ბიზნესი სოციალურ მედიაში</h1>
-            <p>ჩვენ ვქმნით ციფრულ ნაკადს (Flow), რომელიც შენს ბრენდს წარმატებამდე მიიყვანს.</p>
-            <a href="#contact" class="btn-main">დაგვიკავშირდით</a>
+            <h1 data-i18n="hero_title">გაზარდე შენი ბიზნესი სოციალურ მედიაში</h1>
+            <p data-i18n="hero_desc">ჩვენ ვქმნით ციფრულ ნაკადს (Flow), რომელიც შენს ბრენდს წარმატებამდე მიიყვანს.</p>
+            <a href="#contact" class="btn-main" data-i18n="hero_btn">დაგვიკავშირდით</a>
         </div>
     </section>
 
-   <section id="services">
-    <h2>ჩვენი სერვისები</h2>
-    <div class="services-grid">
-        <div class="service-card reveal">
-            <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
-            <h3>SMM მენეჯმენტი</h3>
-            <p>გვერდების სრული მართვა, პოსტების დაგეგმვა, აუდიტორიასთან კომუნიკაცია და ყოველთვიური რეპორტინგი.</p>
+    <section id="services">
+        <h2 data-i18n="services_title">ჩვენი სერვისები</h2>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                <h3 data-i18n="smm_title">SMM მენეჯმენტი</h3>
+                <p data-i18n="smm_desc">გვერდების სრული მართვა, პოსტების დაგეგმვა, აუდიტორიასთან კომუნიკაცია და
+                    ყოველთვიური რეპორტინგი.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3 data-i18n="ads_title">რეკლამა (Meta Ads)</h3>
+                <p data-i18n="ads_desc">მიზნობრივი სარეკლამო კამპანიების გამართვა, ბიუჯეტის ოპტიმიზაცია და მაქსიმალური
+                    გაყიდვების მიღწევა.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+                <h3 data-i18n="content_title">კონტენტის შექმნა</h3>
+                <p data-i18n="content_desc">ტრენდული Reels/TikTok ვიდეოების იდეები და მონტაჟი, ფოტოგადაღება და უნიკალური
+                    ვიზუალური სტილი.</p>
+            </div>
+            <div class="service-card reveal highlight-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3 data-i18n="web_title">ვებ-საიტების დამზადება</h3>
+                <p data-i18n="web_desc">თანამედროვე, სწრაფი (Frontend Development) და ადაპტური საიტების აწყობა თქვენი
+                    ბიზნესის წარმატებისთვის.</p>
+            </div>
         </div>
-        <div class="service-card reveal">
-            <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>რეკლამა (Meta Ads)</h3>
-            <p>მიზნობრივი სარეკლამო კამპანიების გამართვა, ბიუჯეტის ოპტიმიზაცია და მაქსიმალური გაყიდვების მიღწევა.</p>
-        </div>
-        <div class="service-card reveal">
-            <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
-            <h3>კონტენტის შექმნა</h3>
-            <p>ტრენდული Reels/TikTok ვიდეოების იდეები და მონტაჟი, ფოტოგადაღება და უნიკალური ვიზუალური სტილი.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section id="about">
-    <div class="about-container reveal">
-        <div class="about-text">
-            <h2>ჩვენი ისტორია</h2>
-            <p>M.A.K.A SMM Flow დაიბადა დიდი იდეითა და ოჯახური შთაგონებით. სახელის მიღმა ჩვენთვის ყველაზე ძვირფასი ადამიანების ინიციალები დგას, რაც თითოეულ პროექტს განსაკუთრებულ პასუხისმგებლობასა და ენერგიას სძენს.</p>
-            <p>ჩვენი მიზანია, ბიზნესებს დავეხმაროთ ციფრული „ნაკადის“ (Flow) პოვნაში, შევქმნათ ტრენდული კონტენტი და ციფრული მარკეტინგი ვაქციოთ რეალურ გაყიდვებად.</p>
+        <div class="about-container reveal">
+            <div class="about-text">
+                <h2 data-i18n="about_title">ჩვენი ისტორია & Frontend Dev</h2>
+                <p data-i18n="about_desc1">M.A.K.A SMM Flow დაიბადა დიდი იდეითა და ოჯახური შთაგონებით. სახელის მიღმა
+                    ჩვენთვის ყველაზე ძვირფასი ადამიანების ინიციალები დგას, რაც თითოეულ პროექტს განსაკუთრებულ
+                    პასუხისმგებლობასა და ენერგიას სძენს.</p>
+                <p data-i18n="about_desc2">SMM მარკეტინგთან ერთად, ვარ <strong>Frontend დეველოპერი</strong> — რაც
+                    ნიშნავს იმას, რომ თქვენი ბრენდისთვის არა მხოლოდ სოციალური მედიის ვიზუალს, არამედ სრულყოფილ, სწრაფ და
+                    თანამედროვე ვებ-საიტსაც შევქმნი!</p>
+            </div>
+            <div class="about-image">
+                <img src="./img/2.png" alt="M.A.K.A SMM Flow Logo Large">
+            </div>
         </div>
-        <div class="about-image">
-            <img src="./img/2.png" alt="M.A.K.A SMM Flow Logo Large">
-        </div>
-    </div>
-</section>
-
-    <section id="contact">
-        <h2>დაგვიკავშირდით</h2>
-       <form id="contact-form" class="reveal" action="https://formspree.io/f/xlgyggwy" method="POST">
-    <input type="text" name="name" placeholder="თქვენი სახელი" required>
-    <input type="email" name="email" placeholder="ელ-ფოსტა" required>
-    <textarea name="message" placeholder="თქვენი შეტყობინება" required></textarea>
-    <button type="submit">გაგზავნა</button>
-</form>
     </section>
 
-    <footer>
-    <div class="social-links">
-        <!-- <a href="შენი_ფეისბუქის_ლინკი" target="_blank"><i class="fab fa-facebook"></i></a> -->
-        <a href="https://www.instagram.com/maka.smm.flow" target="_blank"><i class="fab fa-instagram"></i></a>
+    <section id="contact">
+        <h2 data-i18n="contact_title">დაგვიკავშირდით</h2>
+
+        <div class="contact-wrapper reveal">
+            <div class="contact-form-box">
+                <h3 class="box-title" data-i18n="contact_form_title">მოგვწერეთ და მალე გიპასუხებთ</h3>
+                <form id="contact-form" action="https://formspree.io/f/xlgyggwy" method="POST">
+                    <input type="text" name="name" placeholder="თქვენი სახელი" required
+                        data-i18n-placeholder="form_name">
+                    <input type="email" name="email" placeholder="ელ-ფოსტა" required data-i18n-placeholder="form_email">
+                    <textarea name="message" placeholder="თქვენი შეტყობინება" required
+                        data-i18n-placeholder="form_message"></textarea>
+                    <button type="submit" data-i18n="form_button">გაგზავნა</button>
+                </form>
+            </div>
+
+            <div class="contact-info-box">
+                <h3 class="box-title" data-i18n="contact_info_title">პირდაპირი კავშირი</h3>
+
+                <div class="info-items">
+                    <a href="https://wa.me/07960356078" target="_blank" class="info-item-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <span>WhatsApp / ტელეფონი</span>
+                            <strong>+44 7960 356078</strong>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/maka.smm.flow" target="_blank" class="info-item-card">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <span>Instagram</span>
+                            <strong>@maka.smm.flow</strong>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61591649526486" target="_blank"
+                        class="info-item-card">
+                        <i class="fab fa-facebook"></i>
+                        <div>
+                            <span>Facebook</span>
+                            <strong>M.A.K.A SMM Flow</strong>
+                        </div>
+                    </a>
+
+                    <button type="button" class="qr-trigger-btn" id="open-qr-btn">
+                        <i class="fas fa-qrcode"></i>
+                        <div>
+                            <span data-i18n="qr_btn_subtitle">მობილურზე გასახსნელად</span>
+                            <strong data-i18n="qr_btn_title">საიტის QR კოდი 📱</strong>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-text">
+            &copy; 2026 M.A.K.A SMM Flow. <span data-i18n="footer_rights">ყველა უფლება დაცულია.</span>
+        </div>
+    </section>
+
+    <div class="qr-modal" id="qr-modal">
+        <div class="qr-modal-content">
+            <span class="close-modal" id="close-qr-btn">&times;</span>
+            <h3 data-i18n="modal_qr_title">დასკანერე და გახსენი მობილურში</h3>
+            <div class="modal-qr-img">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://m-a-k-a-smm-flow.vercel.app"
+                    alt="Website QR Code">
+            </div>
+            <p data-i18n="modal_qr_desc">მიუშვი კამერა QR კოდს საიტის მობილურში გასახსნელად</p>
+        </div>
     </div>
-    <p>&copy; 2026 M.A.K.A SMM Flow. ყველა უფლება დაცულია.</p>
-</footer>
 
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>

@@ -4,32 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>M.A.K.A SMM Flow | სოციალური მედიის სააგენტო & Web Dev</title>
-    
-    <meta name="description" content="M.A.K.A SMM Flow - პროფესიონალური SMM მომსახურება, სოციალური მედიის მართვა, ვებ დიზაინი და Web Development. გაზარდე შენი ბიზნესი ციფრულ სამყაროში.">
-    <meta name="keywords" content="SMM, Web Development, ვებ დიზაინი, სოციალური მედიის მართვა, M.A.K.A SMM Flow, ციფრული მარკეტინგი, საიტის დამზადება">
-    <meta name="author" content="M.A.K.A SMM Flow">
+
+    <title>M.A.K.A. Digital & Web | SMM სააგენტო & Frontend Development</title>
+
+    <meta name="description"
+        content="M.A.K.A. Digital & Web - პროფესიონალური SMM მომსახურება, სოციალური მედიის მართვა, ვებ დიზაინი და Frontend Development.">
+    <meta name="keywords"
+        content="SMM, Web Development, Frontend, ვებ დიზაინი, სოციალური მედიის მართვა, M.A.K.A Digital, საიტის დამზადება">
+    <meta name="author" content="M.A.K.A. Digital & Web">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="M.A.K.A SMM Flow | SMM & Web Development">
-    <meta property="og:description" content="პროფესიონალური SMM მომსახურება, ვებ დიზაინი და Web Development.">
+    <meta property="og:title" content="M.A.K.A. Digital & Web | SMM & Frontend Development">
+    <meta property="og:description" content="პროფესიონალური SMM მომსახურება, ვებ დიზაინი და Frontend Development.">
     <meta property="og:image" content="https://m-a-k-a-smm-flow.vercel.app/img/2.png">
     <meta property="og:url" content="https://m-a-k-a-smm-flow.vercel.app">
 
     <link rel="icon" type="image/png" href="./img/2.png">
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
 
 <body>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
     <header>
         <div class="logo">
             <a href="#home">
-                <img src="./img/2.png" alt="M.A.K.A SMM Flow Logo">
-                <span>M.A.K.A SMM Flow</span>
+                <img src="./img/2.png" alt="M.A.K.A. Logo">
+                <span>M.A.K.A. <small>Digital & Web</small></span>
             </a>
         </div>
 
@@ -39,10 +43,11 @@
             <div class="line3"></div>
         </div>
 
-        <nav class="nav-container " id="nav-menu">
+        <nav class="nav-container" id="nav-menu">
             <ul class="nav-links">
                 <li><a href="#home" data-i18n="nav_home">მთავარი</a></li>
                 <li><a href="#services" data-i18n="nav_services">სერვისები</a></li>
+                <li><a href="#portfolio" data-i18n="nav_portfolio">პორტფოლიო</a></li>
                 <li><a href="#about" data-i18n="nav_about">ჩვენ შესახებ</a></li>
                 <li><a href="#contact" data-i18n="nav_contact">კონტაქტი</a></li>
             </ul>
@@ -59,15 +64,20 @@
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 data-i18n="hero_title">გაზარდე შენი ბიზნესი სოციალურ მედიაში</h1>
-            <p data-i18n="hero_desc">ჩვენ ვქმნით ციფრულ ნაკადს (Flow), რომელიც შენს ბრენდს წარმატებამდე მიიყვანს.</p>
-            <a href="#contact" class="btn-main" data-i18n="hero_btn">დაგვიკავშირდით</a>
+        <div class="hero-content reveal">
+            <span class="hero-badge" data-i18n="hero_badge">SMM Agency & Frontend Studio</span>
+            <h1 data-i18n="hero_title">გაზარდე შენი ბიზნესი სოციალურ მედიაში და შექმენი თანამედროვე ვებსაიტი</h1>
+            <p data-i18n="hero_desc">ჩვენ ვაერთიანებთ კრეატიულ ციფრულ მარკეტინგსა და სწრაფ ვებ-დეველოპმენტს, რათა შენი
+                ბრენდი ლიდერი გახდეს.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-main" data-i18n="hero_btn">დაგვიკავშირდით</a>
+                <a href="#portfolio" class="btn-secondary" data-i18n="hero_btn_portfolio">ნამუშევრების ნახვა</a>
+            </div>
         </div>
     </section>
 
     <section id="services">
-        <h2 data-i18n="services_title">ჩვენი სერვისები</h2>
+        <h2 class="section-title" data-i18n="services_title">ჩვენი სერვისები</h2>
         <div class="services-grid">
             <div class="service-card reveal">
                 <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
@@ -89,10 +99,138 @@
             </div>
             <div class="service-card reveal highlight-card">
                 <div class="service-icon"><i class="fas fa-code"></i></div>
-                <h3 data-i18n="web_title">ვებ-საიტების დამზადება</h3>
-                <p data-i18n="web_desc">თანამედროვე, სწრაფი (Frontend Development) და ადაპტური საიტების აწყობა თქვენი
-                    ბიზნესის წარმატებისთვის.</p>
+                <h3 data-i18n="web_title">Frontend Development</h3>
+                <p data-i18n="web_desc">თანამედროვე, სწრაფი და ადაპტური ვებ-საიტების, ლენდინგებისა და პორტფოლიოების
+                    აწყობა ნულიდან.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-title" data-i18n="portfolio_title">ჩემი ვებ-პროექტები</h2>
+        <p class="section-subtitle" data-i18n="portfolio_subtitle">გაეცანით ჩემს მიერ შექმნილ ვებ-საიტებსა და ციფრულ
+            გადაწყვეტილებებს</p>
+
+        <div class="portfolio-grid">
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="./img/meet-georgia.png" alt="Meet Georgia">
+                    <div class="project-overlay">
+                        <a href="https://meet-georgia.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="view_site">საიტის ნახვა</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Frontend</span>
+                        <span>Vercel</span>
+                    </div>
+                    <h3 data-i18n="proj1_title">Meet Georgia</h3>
+                    <p data-i18n="proj1_desc">ტურისტული პლატფორმა საქართველოში მოგზაურობისთვის.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+                        alt="Pharmaway">
+                    <div class="project-overlay">
+                        <a href="https://pharmaway-sigma.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="view_site">საიტის ნახვა</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Web App</span>
+                        <span>Responsive</span>
+                    </div>
+                    <h3 data-i18n="proj2_title">Pharmaway</h3>
+                    <p data-i18n="proj2_desc">ფარმაცევტული მიმართულების თანამედროვე ციფრული პლატფორმა.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="./img/I.M.modern.png" alt="I'm Modern">
+                    <div class="project-overlay">
+                        <a href="https://i-m-modern.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="view_site">საიტის ნახვა</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Frontend</span>
+                        <span>HTML/CSS/JS</span>
+                    </div>
+                    <h3 data-i18n="proj3_title">I'm Modern</h3>
+                    <p data-i18n="proj3_desc">სახლებისა და ინტერიერის რემონტის თანამედროვე სერვისის ვებსაიტი.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="./img/store.png" alt="Store Project">
+                    <div class="project-overlay">
+                        <a href="https://store-project-six-delta.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="view_site">საიტის ნახვა</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Angular</span>
+                        <span>Backend API</span>
+                        <span>Auth & Cart</span>
+                    </div>
+                    <h3 data-i18n="proj4_title">Online Store</h3>
+                    <p data-i18n="proj4_desc">Angular-ით აწყობილი ონლაინ მაღაზია: ბექენდიდან მონაცემების წამოღებით,
+                        ავტორიზაციით, რეგისტრაციითა და კალათის ფუნქციონალით.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="./img/დები.webp" alt="Sisters British Corner">
+                    <div class="project-overlay">
+                        <a href="https://sistersbritishcorner.lovable.app/?category=all" target="_blank"
+                            class="project-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="view_site">საიტის ნახვა</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Lovable</span>
+                        <span>E-Commerce</span>
+                    </div>
+                    <h3 data-i18n="proj5_title">Sisters British Corner</h3>
+                    <p data-i18n="proj5_desc">ბრიტანული პროდუქციის/ნივთების თანამედროვე ონლაინ მაღაზია.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="./img/stomatologia.png" alt="Tbilisi Smile Booking">
+                    <div class="project-overlay">
+                        <a href="https://tbilisi-smile-booking.lovable.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="view_site">საიტის ნახვა</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Lovable</span>
+                        <span>Booking System</span>
+                    </div>
+                    <h3 data-i18n="proj6_title">Tbilisi Smile Booking</h3>
+                    <p data-i18n="proj6_desc">სტომატოლოგიური კლინიკის ონლაინ ვიზიტების ჯავშნის სისტემა.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -100,21 +238,29 @@
         <div class="about-container reveal">
             <div class="about-text">
                 <h2 data-i18n="about_title">ჩვენი ისტორია & Frontend Dev</h2>
-                <p data-i18n="about_desc1">M.A.K.A SMM Flow დაიბადა დიდი იდეითა და ოჯახური შთაგონებით. სახელის მიღმა
-                    ჩვენთვის ყველაზე ძვირფასი ადამიანების ინიციალები დგას, რაც თითოეულ პროექტს განსაკუთრებულ
-                    პასუხისმგებლობასა და ენერგიას სძენს.</p>
+                <p data-i18n="about_desc1"><strong>M.A.K.A. Digital & Web</strong> დაიბადა დიდი იდეითა და ოჯახური
+                    შთაგონებით. სახელის მიღმა ჩვენთვის ყველაზე ძვირფასი ადამიანების ინიციალები დგას, რაც თითოეულ პროექტს
+                    განსაკუთრებულ პასუხისმგებლობასა და ენერგიას სძენს.</p>
                 <p data-i18n="about_desc2">SMM მარკეტინგთან ერთად, ვარ <strong>Frontend დეველოპერი</strong> — რაც
                     ნიშნავს იმას, რომ თქვენი ბრენდისთვის არა მხოლოდ სოციალური მედიის ვიზუალს, არამედ სრულყოფილ, სწრაფ და
-                    თანამედროვე ვებ-საიტსაც შევქმნი!</p>
+                    თαნამედროვე ვებ-საიტსаც შევქმნი!</p>
+
+                <div class="tech-stack">
+                    <span><i class="fab fa-html5"></i> HTML5</span>
+                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    <span><i class="fab fa-react"></i> React</span>
+                    <span><i class="fas fa-bullhorn"></i> Meta Ads</span>
+                </div>
             </div>
             <div class="about-image">
-                <img src="./img/2.png" alt="M.A.K.A SMM Flow Logo Large">
+                <img src="./img/2.png" alt="M.A.K.A. Logo Large" class="floating-logo">
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2 data-i18n="contact_title">დაგვიკავშირდით</h2>
+        <h2 class="section-title" data-i18n="contact_title">დაგვიკავშირდით</h2>
 
         <div class="contact-wrapper reveal">
             <div class="contact-form-box">
@@ -133,7 +279,7 @@
                 <h3 class="box-title" data-i18n="contact_info_title">პირდაპირი კავშირი</h3>
 
                 <div class="info-items">
-                    <a href="https://wa.me/07960356078" target="_blank" class="info-item-card">
+                    <a href="https://wa.me/447960356078" target="_blank" class="info-item-card">
                         <i class="fab fa-whatsapp"></i>
                         <div>
                             <span>WhatsApp / ტელეფონი</span>
@@ -154,7 +300,7 @@
                         <i class="fab fa-facebook"></i>
                         <div>
                             <span>Facebook</span>
-                            <strong>M.A.K.A SMM Flow</strong>
+                            <strong>M.A.K.A. Digital & Web</strong>
                         </div>
                     </a>
 
@@ -170,7 +316,7 @@
         </div>
 
         <div class="copyright-text">
-            &copy; 2026 M.A.K.A SMM Flow. <span data-i18n="footer_rights">ყველა უფლება დაცულია.</span>
+            &copy; 2026 M.A.K.A. Digital & Web. <span data-i18n="footer_rights">ყველა უფლება დაცულია.</span>
         </div>
     </section>
 
@@ -186,8 +332,8 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
-
+    <script src="JS/translations.js"></script>
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
